@@ -12,7 +12,6 @@ export class App extends Component {
     isLoading: false,
     currentSearch: '',
     pageNum: 1,
-    modalOpen: false,
     largeImg: '',
     isOpen: false,
     totalHits: null,

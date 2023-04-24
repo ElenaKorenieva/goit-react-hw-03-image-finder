@@ -24,3 +24,9 @@ export const StyledButton = styled.button`
     background-color: #303f9f;
   }
 `;
+
+export const StyledButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+`;
