@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Api } from './Api';
+import { Api } from '../Api';
 import { Button } from './Button';
 import { ImageGallery } from './ImageGallery';
 import { Loader } from './Loader/Loader';
@@ -48,7 +48,7 @@ export class App extends Component {
       if (currentSearch === this.state.currentSearch) {
         return prevState;
       }
-      return { currentSearch, pageNum: 1, images: [] };
+      return { currentSearch, pageNum: 1, images: [], isLoading: false };
     });
   };
 
