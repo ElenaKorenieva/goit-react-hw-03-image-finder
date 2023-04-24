@@ -78,10 +78,10 @@ export class App extends Component {
         {this.state.isOpen && (
           <Modal closeModal={this.toggleModal} largeImg={this.state.largeImg} />
         )}
+        {this.state.isLoading && <Loader />}
         {this.state.images.length < this.state.totalHits ? (
           <Button onClick={this.onButtonClick} />
         ) : null}
-        {this.state.isLoading && <Loader />}
       </div>
     );
   }
